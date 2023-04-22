@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Pinging the Server
+    </title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <style type="text/css">
+        .responded {
+            color: green;
+        }
+
+        .checking,
+        .unchecked {
+            color: #FF8C00;
+        }
+
+        .timeout {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="color:green">
+        Welcome To Tutorials Point
+    </h2>
+    <label for="url">
+        Enter the URL you want to ping:
+    </label><br>
+    <input type="text" id="url" name="url" style="margin: 10px; width: 50%;"><br>
+    <input type="submit" value="Submit" onclick="pingURL()">
+    <div id="outputDiv"></div>
+</body>
+<script>
+    function pingURL() {
+        // Getting the URL from the User
+        var URL = $("#url").val();
+        var settings = {
+            // Defining the request configuration
+            cache: false,
+            dataType: "jsonp",
+            crossDomain: true,
+            url: URL,
+            method: "GET",
+            timeout: 500,
+            headers: { accept: "application/json", "Access-Control-Allow-Origin": "*", },
+
+            // Defines the response to be made
+            // for certain status codes
+            statusCode: {
+                200: function (response) {
+                    document.getElementById("outputDiv").innerHTML = "<h3 style='color:green'>Status 200: Page is up!";
+                },
+                400: function (response) {
+                    document.getElementById("outputDiv").innerHTML = "<h3 style='color:red'>Status 400: Page is down.</h3>";
+                },
+                0: function (response) {
+                    document.getElementById("outputDiv").innerHTML = "<h3 style='color:red'>Status 0: Page is down.</h3>";
+                },
+            },
+        };
+        // Sends the request and observes the response
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        })
+            .fail(function (response) {
+                console.log("Error" + response);
+            });
+    }
+</script>
+
+</html>
