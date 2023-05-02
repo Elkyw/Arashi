@@ -32,8 +32,5 @@ share this with your friends and also with your foes ! XD
 [![Foo](donate.gif)](https://www.buymeacoffee.com/Elkyw)
 if you are unable to donate me , no worries i don't mind show me your love that would be all for me....^0^
 
-# Mail Me:
-
--Elkyw@programmer.net
--2023-04-12
--📌Trøllheim
+- 2023-04-12
+- 📌Trøllheim
