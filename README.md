@@ -27,9 +27,9 @@ Great tool for great ppl !!
 Found Arashi cool? sub to Elkyw on yt leave some like to my instagram post, btw happy hacking 🍀 .
 share this with your friends and also with your foes ! XD
 
-# ☕ Save an programmer and his family from starvation by making a donation <3
+# ☕ Save an programmer from starvation by making a donation <3
 
-[![Foo](donate.gif)](https://www.buymeacoffee.com/Elkyw)
+<img src="donate.gif" herf="https://www.buymeacoffee.com/Elkyw">
 if you are unable to donate me , no worries i don't mind show me your love that would be enough for me....^0^
 
 - 2023-04-12
